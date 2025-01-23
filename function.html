@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function greet(){
+            document.write("hello world","<br>")
+        }
+        greet()
+        document.write("hello","<br>")
+        
+        function h(){
+            console.log("hello ",+name)
+        }
+        let name=prompt("Enter your name")
+        h(name)
+        
+        function add(a,b){
+            console.log(a+b)
+        }
+        add(3,5)
+        add(7,3)
+
+        function a(aa,bb){
+        return aa+bb
+        }
+        let n1=parseFloat(prompt("enter a number1"))
+        let n2=parseFloat(prompt("enter a number2"))
+        //calling a function
+        let result=a(n1,n2);
+        //display the result
+        console.log("The sum is :"+result)
+
+    </script>
+</body>
+</html>
