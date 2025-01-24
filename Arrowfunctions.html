@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Arrow Function:
+       //--ES6 version
+       //--more readable and more structure
+      //--anonymous functions(lamda functions)
+       //--without function name but they are assigned to a variable
+
+        //arrow function without parameter
+        let c=()=>{
+            console.log("hi")
+        }
+        c()
+        //with parameter
+        //example
+        let x=(a,b)=>{
+            console.log(a+b)
+        }
+        x(2,4)
+        //with one argument
+        //without using parenthesis
+        let greet=x=>console.log(x);
+        greet('hello')
+
+        //without argument
+
+        let wish=x=>console.log("hello")
+        wish()
+
+        //arrow function as an expression
+        let age=19;
+        let welcome=(age<18)?
+        ()=>console.log('hello'):
+        ()=>console.log('world');
+        welcome()
+        //synchronous and asynchronous
+        function task1(){
+            console.log("Task1:start")
+        }
+        function task2(){
+            console.log("Task2:start")
+        }
+        function task3(){
+            console.log("Task3:start")
+        }
+        task1()
+        task2()
+        task3()
+        
+        //asynchronous function
+        //multiple tasks at a time
+        console.log("hi ashish")
+        setTimeout(()=>{
+            console.log("Hi I am waiting")
+        },5000);
+        console.log("I am in lab")  
+        //Javascript callback
+        //A Call back function is a function that is passed argument to another function
+        function greets(name,callback){
+            console.log(`hello,${name}!`)
+            callback();
+            //this calls the callback function after greeting
+        }
+        function Goodbye(){
+            console.log("Goodbye")
+        callback();
+        }
+        greets("sam",Goodbye);
+        //promise:
+        //three states
+        //1) pending : still not completed
+        //2) fulfilled:task completed
+        //3) rejected:the operation failed
+        //example
+
+        let mypromise = new Promise((resolve,reject)=>{
+            let success = true;
+            if(success){
+                resolve("task completed");
+            }else{
+                reject("task failed");
+            }
+        })
+
+    </script>
+</body>
+</html>
