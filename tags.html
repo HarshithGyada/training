@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="a">Hi</h1>
+    <h1 class="b">Hello</h1>
+    <h1 class="c">Welcome To</h1>
+    <h1 class="a">JavaScript</h1>
+    
+    <script>
+    //Getting elements by Tag Name:
+    //This method takes a tag name as string and returns an HTML collection object
+    let x = document.getElementsByTagName("h1")
+    console.log(x)
+    for(let i=0; i<x.length; i++){
+        console.log(x[i].textContent)
+    }
+    </script>
+    <h1 id="a" class="a">Hi</h1>
+    <h1 id="b"  class="b">Hello</h1>
+    <h1 id="c"  claa="a">Welcome</h1>
+    <h2 class="a">javascript</h2>
+    <script>
+        let y=document.querySelector("a")
+        console.log(y)
+        //manipulating elements:
+        //to create html elements:
+        //createElement()-create a new element --method -document.createElement()
+        //textContent
+    </script>
+    <script>
+        let t=document.createElement("h3")
+        t=classname="tt"
+        t.textContent="hello ravi"
+        console.log(t)
+        document.body.appendChild(t);
+    </script>
+   <script>
+    const t=['ab','cd','ef']
+    for(let i=0;i<length;i++){
+        let tt=document.createElement("h1")
+        tt=className="a"
+        t.textContent=t[i]
+        console.log(tt)
+        document.body.appendChild(t[i]);
+    }
+   </script>
+</body>
+</html>
