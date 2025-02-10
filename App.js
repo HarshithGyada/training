@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 //import './App.css';
 /*import Welcome from './components/welcome';
 const App=()=>{
@@ -20,7 +20,7 @@ function App(){
   )
 }
 export default App;*/
-const Fruitlist=()=>{
+/*const Fruitlist=()=>{
   const fruits=['apple','mango','orange']
 
   return(
@@ -34,4 +34,29 @@ const Fruitlist=()=>{
     </div>
   )
 }
-export default Fruitlist;
+export default Fruitlist;*/
+/*const Counter=()=>{
+  const[count,setCount]=useState(0);
+  return(
+    <div>
+      <h1>{count}</h1>
+      <button onClick={() =>setCount(count+1)}>Increment</button>
+      <button onClick={() =>setCount(count-1)}>decrement</button>
+    </div>
+  );
+};
+export default Counter;*/
+const ThemeToggler=()=>{
+  const[theme,setTheme]=useState('light')
+  const togglerTheme=()=>{
+    setTheme(prevTheme=>(prevTheme=='light'?'dark':'light'))
+  }
+  return(
+    <div style={{backgroundColor:theme=='light'?'white':'black',color:theme=='light'?'black':'white',textAlign:'center'}}>
+      <h1> The Current Theme is {theme}</h1>
+      <button onClick={togglerTheme}>togglerTheme</button>
+
+    </div>
+  )
+}
+export default ThemeToggler;
